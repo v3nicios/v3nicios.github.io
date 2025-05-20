@@ -121,14 +121,16 @@ document.addEventListener("DOMContentLoaded", () => {
       spellCard.className = "spell-card";
   
       spellCard.innerHTML = `
-          <h3>${spell.attributes.name}</h3>
+          
           <div class="spell-content">
           ${
             spell.attributes.image
               ? `<img src="${spell.attributes.image}" style="width:170px;height:150px;border-radius:10%;">`
               : ""
           }
+
           <div>
+              <h3>${spell.attributes.name}</h3>
               <p><strong>Categoria:</strong> ${
                 spell.attributes.category || "Desconhecida"
               }</p>

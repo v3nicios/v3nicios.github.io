@@ -110,12 +110,20 @@ body {
 .spell-card {
   margin: 15px 0;
   padding: 15px;
-  border-bottom: 1px solid #ddd;
+  display: flex;
+  width: 1835px;
+  gap: 20px;
+  border-bottom: 2px solid #eee;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 75px;
+  flex-wrap: wrap;
 }
 
 .spell-content {
   display: flex;
-  gap: 20px;
+  gap: 25px;
+  margin-left: 51px;
+  width: 100%;
 }
 
 input[type="text"],
