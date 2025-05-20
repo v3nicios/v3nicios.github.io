@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter API</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <div class="nav-options">
+            <button class="nav-option active" data-page="houses">Casas de Hogwarts</button>
+            <button class="nav-option" data-page="characters">Todos os personagens</button>
+            <button class="nav-option" data-page="spells">Todos os feitiços conhecidos</button>
+        </div>
+    </nav>
+
+    <main class="content">
+
+
+        <!-- Seção Casas -->
+        <div id="housesSection" class="section">
+
+            <select id="houseSelect">
+                <option value="Gryffindor">Gryffindor</option>
+                <option value="Ravenclaw">Ravenclaw</option>
+                <option value="Hufflepuff">Hufflepuff</option>
+                <option value="Slytherin">Slytherin</option>
+            </select>
+            <input type="text" id="characterSearch" placeholder="Pesquisar personagem...">
+            <div id="charactersContainer"></div>
+        </div>
+
+        <!-- Seção Feitiços -->
+        <div id="spellsSection" class="section" style="display: none;">
+            <div id="spellsContainer"></div>
+        </div>
+    </main>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+    </style>
+</body>
+
+</html>
