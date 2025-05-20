@@ -160,6 +160,25 @@ h4 {
 }
 
 @media (max-width: 425px) {
+  .spell-card {
+  margin: 20px 0;
+  padding: 20px;
+  display: flex;
+  width: 368px;
+  gap: 20px;
+  border-bottom: 2px solid #eee;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 75px;
+  flex-wrap: wrap;
+}
+
+.spell-content {
+  display: flex;
+  gap: 25px;
+  margin-left: 51px;
+  width: 100%;
+}
+  
   .character-image img {
     width: 180px;
     height: 212px;
