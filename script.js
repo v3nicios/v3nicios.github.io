@@ -122,26 +122,27 @@ document.addEventListener("DOMContentLoaded", () => {
   
       spellCard.innerHTML = `
           
-          <div class="spell-content">
-          ${
-            spell.attributes.image
-              ? `<img src="${spell.attributes.image}" style="width:170px;height:150px;border-radius:10%;">`
-              : ""
-          }
-
-          <div>
-              <h3>${spell.attributes.name}</h3>
-              <p><strong>Categoria:</strong> ${
-                spell.attributes.category || "Desconhecida"
-              }</p>
-              <p><strong>Efeito:</strong> ${
-                spell.attributes.effect || "Sem descrição"
-              }</p>
-              <p><strong>Encantamento:</strong> ${
-                spell.attributes.incantation || "Sem descrição"
-              }</p>
-          </div>
-          </div>
+        <div class="spell-image">
+        ${
+          spell.attributes.image
+            ? `<img src="${spell.attributes.image}" 
+            style="width:170px;height:150px;border-radius:10%;">`
+            : ""
+        }
+        </div>
+        <div class="spell-content">      
+      
+          <h3>${spell.attributes.name}</h3>
+          <p><strong>Categoria:</strong> ${
+            spell.attributes.category || "Desconhecida"
+          }</p>
+          <p><strong>Efeito:</strong> ${
+            spell.attributes.effect || "Sem descrição"
+          }</p>
+          <p><strong>Encantamento:</strong> ${
+            spell.attributes.incantation || "Sem descrição"
+          }</p>
+        </div>
       `;
       container.appendChild(spellCard);
     });
