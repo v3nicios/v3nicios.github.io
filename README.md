@@ -72,7 +72,7 @@ Este projeto é uma aplicação web interativa que permite aos usuários explora
 * `html.html`: Arquivo principal com a estrutura HTML da página.
 * `stylesheet.css`: Arquivo contendo todas as regras de estilo CSS.
 * `script.js`: Arquivo com o código JavaScript para interatividade e consumo de API.
-* `Midia/logo.webp` (presumido): Imagem de fundo utilizada no CSS (não fornecida, mas referenciada).
+* `Midia/logo.webp` : Imagem de fundo utilizada no CSS.
 
 ## Capturas de Tela
 
